@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+:root {
+  --bone: #faf6f1;
+  --bone-deep: #f2e9e0;
+  --ink: #241b18;
+  --ink-soft: #6d5c54;
+  --rose: #b4544c;
+  --rose-deep: #8d3d38;
+  --line: #e4d8cc;
+}
+
+@theme inline {
+  --color-bone: var(--bone);
+  --color-bone-deep: var(--bone-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-rose: var(--rose);
+  --color-rose-deep: var(--rose-deep);
+  --color-line: var(--line);
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-instrument);
+}
+
+body {
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+.display {
+  font-family: var(--font-instrument), ui-serif, Georgia, serif;
+  font-weight: 400;
+  letter-spacing: -0.02em;
+}
+
+.eyebrow {
+  font-size: 0.6875rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
