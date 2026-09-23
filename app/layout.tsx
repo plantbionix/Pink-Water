@@ -22,6 +22,9 @@ export const metadata: Metadata = {
   alternates: {
     canonical: "https://www.plantbionix.com",
   },
+  verification: {
+    google: "M5_4zQdiSBw8xVa9JCPC_CKDsV9yhrUaQMj9DtQrkt8",
+  },
   openGraph: {
     title: "Plant Bionix — functional water",
     description:
