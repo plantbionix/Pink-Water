@@ -37,15 +37,26 @@ export default function ProductsPage() {
       <SiteHeader />
 
       <main className="flex-1">
-        <section className="mx-auto max-w-6xl px-6 py-16 md:py-24">
-          <h1 className="display max-w-2xl text-4xl md:text-6xl">
-            Three waters. Three different drinks.
-          </h1>
-          <p className="mt-5 max-w-xl leading-relaxed text-ink-soft">
-            One sachet, one litre, about four minutes. No boiling needed. But
-            each wood tastes different and belongs at a different time of
-            day, so each gets its own pack and its own dose.
-          </p>
+        <section className="mx-auto grid max-w-6xl gap-12 px-6 py-16 md:grid-cols-2 md:py-24">
+          <div>
+            <h1 className="display text-4xl md:text-6xl">
+              Three waters. Three different drinks.
+            </h1>
+            <p className="mt-5 leading-relaxed text-ink-soft">
+              One sachet, one litre, about four minutes. No boiling needed.
+              But each wood tastes different and belongs at a different time
+              of day, so each gets its own pack and its own dose.
+            </p>
+          </div>
+          <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-bone-deep md:aspect-auto">
+            <Image
+              src="/products/product-0187.jpg"
+              alt="Heartwood and milled powder beside a PLANT BIONIX carton"
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
+            />
+          </div>
         </section>
 
         <section className="mx-auto max-w-6xl px-6 pb-20 md:pb-28">
