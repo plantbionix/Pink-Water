@@ -94,7 +94,7 @@ const faqs = [
 ];
 
 export default function Home() {
-  const waitlistEnabled = Boolean(process.env.WEB3FORMS_ACCESS_KEY);
+  const waitlistEnabled = Boolean(process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY);
 
   return (
     <>

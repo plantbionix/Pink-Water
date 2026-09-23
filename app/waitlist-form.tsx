@@ -5,6 +5,13 @@ import { useState } from "react";
 type Status = "idle" | "sending" | "done" | "error";
 
 const FALLBACK_MAILTO = "mailto:sales@plantbionix.com?subject=Waitlist";
+const ACCESS_KEY = process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY;
+const segmentLabel: Record<string, string> = {
+  diaspora: "Misses this from home",
+  wellness: "Curious, never tried it",
+  horeca: "Runs a café, resort or restaurant",
+  other: "Something else",
+};
 
 export function WaitlistForm({
   enabled,
@@ -43,25 +50,36 @@ export function WaitlistForm({
     const data = new FormData(form);
     setStatus("sending");
 
-    const res = await fetch("/api/waitlist", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({
-        name: data.get("name"),
-        email: data.get("email"),
-        mobile: data.get("mobile"),
-        address: data.get("address"),
-        landmark: data.get("landmark"),
-        city: data.get("city"),
-        pincode: data.get("pincode"),
-        segment: data.get("segment"),
-      }),
-    });
+    const segment = String(data.get("segment") ?? "");
 
-    if (res.ok) {
-      form.reset();
-      setStatus("done");
-    } else {
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify({
+          access_key: ACCESS_KEY,
+          subject: `Plant Bionix waitlist — ${data.get("name")}`,
+          from_name: "Plant Bionix waitlist",
+          replyto: data.get("email"),
+          Name: data.get("name"),
+          Email: data.get("email"),
+          Mobile: data.get("mobile"),
+          Address: data.get("address"),
+          Landmark: data.get("landmark") || "—",
+          City: data.get("city"),
+          Pincode: data.get("pincode"),
+          "Reason for joining": segmentLabel[segment] ?? "—",
+        }),
+      });
+
+      const result = await res.json();
+      if (res.ok && result.success) {
+        form.reset();
+        setStatus("done");
+      } else {
+        setStatus("error");
+      }
+    } catch {
       setStatus("error");
     }
   }
