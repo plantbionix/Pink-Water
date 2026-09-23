@@ -25,7 +25,7 @@ export function WaitlistForm({
   if (compact) {
     return (
       <a
-        href={enabled ? "#waitlist" : FALLBACK_MAILTO}
+        href="/join"
         className="inline-block rounded-full bg-rose px-7 py-3.5 font-semibold text-white transition-colors hover:bg-rose-deep"
       >
         Join the waitlist
@@ -58,17 +58,17 @@ export function WaitlistForm({
         headers: { "Content-Type": "application/json", Accept: "application/json" },
         body: JSON.stringify({
           access_key: ACCESS_KEY,
-          subject: `Plant Bionix waitlist — ${data.get("name")}`,
-          from_name: "Plant Bionix waitlist",
+          subject: `PLANT BIONIX waitlist entry from ${data.get("name")}`,
+          from_name: "PLANT BIONIX waitlist",
           replyto: data.get("email"),
           Name: data.get("name"),
           Email: data.get("email"),
           Mobile: data.get("mobile"),
           Address: data.get("address"),
-          Landmark: data.get("landmark") || "—",
+          Landmark: data.get("landmark") || "Not provided",
           City: data.get("city"),
           Pincode: data.get("pincode"),
-          "Reason for joining": segmentLabel[segment] ?? "—",
+          "Reason for joining": segmentLabel[segment] ?? "Not specified",
         }),
       });
 
@@ -89,8 +89,8 @@ export function WaitlistForm({
       <div className="rounded-2xl bg-white px-8 py-10 text-center shadow-sm">
         <p className="display text-3xl text-rose-deep">You&rsquo;re on the list.</p>
         <p className="mt-3 max-w-sm mx-auto leading-relaxed text-ink-soft">
-          Someone from Plant Bionix will reach out to you personally before the
-          first pouches ship. No spam, no forwarding your number — just one
+          Someone from PLANT BIONIX will reach out to you personally before the
+          first pouches ship. No spam, no forwarding your number. Just one
           note when it&rsquo;s ready.
         </p>
       </div>
@@ -229,7 +229,7 @@ export function WaitlistForm({
       </button>
 
       <p className="mt-3 text-xs text-ink-soft">
-        Your address is only used to plan delivery for the first run — never
+        Your address is only used to plan delivery for the first run. Never
         shared or sold.
       </p>
 

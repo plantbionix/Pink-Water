@@ -16,7 +16,7 @@ const baloo = Baloo_2({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.plantbionix.com"),
-  title: "Plant Bionix — functional water",
+  title: "PLANT BIONIX | Functional Water",
   description:
     "Three Kerala heartwoods, portioned into single-serve sachets. One per litre, nothing else added. Daha Pink, Daha Amber and Daha Gold. Join the waitlist.",
   alternates: {
@@ -26,11 +26,11 @@ export const metadata: Metadata = {
     google: "M5_4zQdiSBw8xVa9JCPC_CKDsV9yhrUaQMj9DtQrkt8",
   },
   openGraph: {
-    title: "Plant Bionix — functional water",
+    title: "PLANT BIONIX | Functional Water",
     description:
       "Three Kerala heartwoods in single-serve sachets. One per litre, nothing else added.",
     url: "https://www.plantbionix.com",
-    siteName: "Plant Bionix",
+    siteName: "PLANT BIONIX",
     images: ["/products/product-0189.jpg"],
     locale: "en_IN",
     type: "website",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
 const organizationJsonLd = {
   "@context": "https://schema.org",
   "@type": "Organization",
-  name: "Plant Bionix",
+  name: "PLANT BIONIX",
   url: "https://www.plantbionix.com",
   logo: "https://www.plantbionix.com/favicon.ico",
   email: "sales@plantbionix.com",

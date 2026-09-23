@@ -5,9 +5,9 @@
   --bone-deep: #f3e7dc;
   --ink: #241b18;
   --ink-soft: #6d5c54;
-  --rose: #d94f7a;
-  --rose-deep: #a8305a;
-  --rose-tint: #fbe2ea;
+  --rose: #be345c;
+  --rose-deep: #9e2547;
+  --rose-tint: #fbe6eb;
   --amber: #b56a2e;
   --amber-tint: #f3e2cd;
   --gold: #8a6a1f;
@@ -45,9 +45,9 @@ body {
 }
 
 .eyebrow {
-  font-size: 0.75rem;
+  font-size: 1.0625rem;
   font-weight: 600;
-  letter-spacing: 0.14em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
 }
 

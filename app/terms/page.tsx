@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Terms of Use — Plant Bionix",
+  title: "Terms of Use | PLANT BIONIX",
   description: "Terms of use for plantbionix.com.",
 };
 
@@ -10,9 +10,9 @@ export default function TermsOfUse() {
   return (
     <>
       <header className="border-b border-line">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="display text-xl text-ink">
-            plant bionix
+            PLANT BIONIX
           </Link>
         </div>
       </header>
@@ -26,8 +26,8 @@ export default function TermsOfUse() {
           <section>
             <h2 className="display text-2xl text-ink">Where we are</h2>
             <p className="mt-3">
-              This site is operated by Plant Bionix LLP, India. It is
-              currently a pre-launch site — Daha Pink and Daha Amber are not
+              This site is operated by PLANT BIONIX LLP, India. It is
+              currently a pre-launch site. Daha Pink and Daha Amber are not
               yet available for purchase. Joining the waitlist does not
               create an order, a reservation, or any payment obligation.
             </p>
@@ -59,7 +59,7 @@ export default function TermsOfUse() {
             <h2 className="display text-2xl text-ink">Waitlist information</h2>
             <p className="mt-3">
               Details you submit through the waitlist form are used only to
-              contact you about availability and plan delivery — see our{" "}
+              contact you about availability and plan delivery. See our{" "}
               <Link href="/privacy" className="text-rose-deep underline">
                 Privacy Policy
               </Link>{" "}
@@ -100,9 +100,9 @@ export default function TermsOfUse() {
       </main>
 
       <footer className="border-t border-line">
-        <div className="mx-auto max-w-3xl px-6 py-8">
+        <div className="mx-auto max-w-6xl px-6 py-8">
           <p className="text-xs text-ink-soft">
-            © {new Date().getFullYear()} Plant Bionix LLP
+            © {new Date().getFullYear()} PLANT BIONIX LLP
           </p>
         </div>
       </footer>

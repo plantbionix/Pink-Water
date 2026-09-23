@@ -2,17 +2,17 @@ import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Plant Bionix",
-  description: "How Plant Bionix collects, uses and protects your information.",
+  title: "Privacy Policy | PLANT BIONIX",
+  description: "How PLANT BIONIX collects, uses and protects your information.",
 };
 
 export default function PrivacyPolicy() {
   return (
     <>
       <header className="border-b border-line">
-        <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
+        <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <Link href="/" className="display text-xl text-ink">
-            plant bionix
+            PLANT BIONIX
           </Link>
         </div>
       </header>
@@ -103,9 +103,9 @@ export default function PrivacyPolicy() {
       </main>
 
       <footer className="border-t border-line">
-        <div className="mx-auto max-w-3xl px-6 py-8">
+        <div className="mx-auto max-w-6xl px-6 py-8">
           <p className="text-xs text-ink-soft">
-            © {new Date().getFullYear()} Plant Bionix LLP
+            © {new Date().getFullYear()} PLANT BIONIX LLP
           </p>
         </div>
       </footer>
