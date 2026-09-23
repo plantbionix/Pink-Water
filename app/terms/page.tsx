@@ -27,7 +27,7 @@ export default function TermsOfUse() {
             <h2 className="display text-2xl text-ink">Where we are</h2>
             <p className="mt-3">
               This site is operated by PLANT BIONIX LLP, India. It is
-              currently a pre-launch site. Daha Pink and Daha Amber are not
+              currently a pre-launch site. Pink Water and DAHA Amber are not
               yet available for purchase. Joining the waitlist does not
               create an order, a reservation, or any payment obligation.
             </p>
@@ -46,7 +46,7 @@ export default function TermsOfUse() {
           <section>
             <h2 className="display text-2xl text-ink">Not medical advice</h2>
             <p className="mt-3">
-              Daha Pink and Daha Amber are food products, not medicines.
+              Pink Water and DAHA Amber are food products, not medicines.
               Nothing on this site is a health claim or medical advice, and
               nothing here is intended to diagnose, treat, cure or prevent
               any condition. If you are pregnant or have a medical condition,

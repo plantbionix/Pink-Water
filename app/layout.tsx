@@ -18,7 +18,7 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://www.plantbionix.com"),
   title: "PLANT BIONIX | Functional Water",
   description:
-    "Three Kerala heartwoods, portioned into single-serve sachets. One per litre, nothing else added. Daha Pink, Daha Amber and Daha Gold. Join the waitlist.",
+    "Kerala's original functional water, one pack per litre, nothing else added. Meet Pink Water, DAHA Amber and DAHA Gold. Join the waitlist.",
   alternates: {
     canonical: "https://www.plantbionix.com",
   },
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "PLANT BIONIX | Functional Water",
     description:
-      "Three Kerala heartwoods in single-serve sachets. One per litre, nothing else added.",
+      "Kerala's functional water, one pack per litre, nothing else added.",
     url: "https://www.plantbionix.com",
     siteName: "PLANT BIONIX",
     images: ["/products/product-0189.jpg"],

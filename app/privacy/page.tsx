@@ -37,8 +37,8 @@ export default function PrivacyPolicy() {
           <section>
             <h2 className="display text-2xl text-ink">How we use it</h2>
             <p className="mt-3">
-              Your details are used only to: notify you when Daha Pink and
-              Daha Amber are ready to ship, plan which regions to prioritise
+              Your details are used only to: notify you when Pink Water and
+              DAHA Amber are ready to ship, plan which regions to prioritise
               for the first delivery run, and respond if you write to us.
               Nothing you submit is sold, rented, or shared with advertisers.
             </p>

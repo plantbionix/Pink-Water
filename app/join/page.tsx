@@ -6,7 +6,7 @@ import WaitlistForm from "../waitlist-form";
 export const metadata: Metadata = {
   title: "Join the waitlist | PLANT BIONIX",
   description:
-    "We're filling the first pouches by hand. Join the waitlist to hear first.",
+    "We're filling the first batch of Pink Water by hand. Join the waitlist to hear first.",
   alternates: { canonical: "https://www.plantbionix.com/join" },
 };
 
@@ -22,7 +22,7 @@ export default function JoinPage() {
           <div>
             <p className="eyebrow text-rose">Join</p>
             <h1 className="display mt-5 text-4xl md:text-5xl">
-              We&rsquo;re filling the first pouches by hand.
+              We&rsquo;re filling the first batch of Pink Water by hand.
             </h1>
             <p className="mt-5 leading-relaxed text-ink-soft">
               Which means the first run is small. Add your details and

@@ -89,8 +89,8 @@ export function WaitlistForm({
       <div className="rounded-2xl bg-white px-8 py-10 text-center shadow-sm">
         <p className="display text-3xl text-rose-deep">You&rsquo;re on the list.</p>
         <p className="mt-3 max-w-sm mx-auto leading-relaxed text-ink-soft">
-          Someone from PLANT BIONIX will reach out to you personally before the
-          first pouches ship. No spam, no forwarding your number. Just one
+          Someone from PLANT BIONIX will reach out to you personally before
+          the first batch ships. No spam, no forwarding your number. Just one
           note when it&rsquo;s ready.
         </p>
       </div>

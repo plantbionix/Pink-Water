@@ -6,7 +6,7 @@ import { faqs } from "../content";
 
 export const metadata: Metadata = {
   title: "FAQ | PLANT BIONIX",
-  description: "Common questions about Daha Pink and Daha Amber, answered.",
+  description: "Common questions about Pink Water and the DAHA line, answered.",
   alternates: { canonical: "https://www.plantbionix.com/faq" },
 };
 
@@ -40,10 +40,10 @@ export default function FaqPage() {
                 Got questions? Good.
               </h1>
               <p className="mt-6 text-sm leading-relaxed text-ink-soft">
-                Pathimugham is traditionally used as an emmenagogue. If you
-                are pregnant, please check with your doctor before drinking
-                it. Karingali carries a daily limit, printed on its pack,
-                and is not meant to be drunk all day the way the pink is.
+                As a precaution, please check with your doctor before
+                drinking Pink Water if you are pregnant. DAHA Amber carries a
+                daily limit, printed on the pack, and is not meant to be
+                drunk all day the way Pink is.
               </p>
             </div>
 
