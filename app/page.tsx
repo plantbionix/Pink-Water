@@ -94,7 +94,7 @@ const faqs = [
 ];
 
 export default function Home() {
-  const waitlistEnabled = Boolean(process.env.WAITLIST_ENDPOINT);
+  const waitlistEnabled = Boolean(process.env.WEB3FORMS_ACCESS_KEY);
 
   return (
     <>
@@ -403,8 +403,8 @@ export default function Home() {
               We&rsquo;re filling the first pouches by hand.
             </h2>
             <p className="mt-5 leading-relaxed text-ink-soft">
-              Which means the first run is small. Leave your email and
-              you&rsquo;ll get one note when it&rsquo;s ready — not a
+              Which means the first run is small. Add your details below and
+              we&rsquo;ll reach out personally when it&rsquo;s ready — not a
               newsletter.
             </p>
             <div className="mt-9 flex justify-center">
@@ -422,10 +422,10 @@ export default function Home() {
               <p className="mt-2 text-sm text-ink-soft">Kerala, India</p>
             </div>
             <a
-              href="mailto:hello@plantbionix.com"
+              href="mailto:sales@plantbionix.com"
               className="text-sm text-ink-soft underline transition-colors hover:text-rose-deep"
             >
-              hello@plantbionix.com
+              sales@plantbionix.com
             </a>
           </div>
           <p className="mt-8 max-w-3xl text-xs leading-relaxed text-ink-soft">

@@ -13,15 +13,17 @@ npm run dev
 
 ## Waitlist
 
-The waitlist form posts to `/api/waitlist`, which forwards to whatever endpoint is set in `WAITLIST_ENDPOINT` (a Formspree, Loops, ConvertKit or similar URL that accepts `{ email, source }` as JSON).
+The waitlist form collects name, email, mobile, address (with landmark, city, pincode) and posts to `/api/waitlist`, which emails the submission to **sales@plantbionix.com** via [Web3Forms](https://web3forms.com) — no SMTP setup, no database.
 
-If `WAITLIST_ENDPOINT` is unset, the form is replaced with a `mailto:` button — so the page never shows visitors a broken form.
+Setup (one-time, ~2 minutes):
+1. Go to [web3forms.com](https://web3forms.com), enter `sales@plantbionix.com`, and get an access key emailed instantly (no password, no signup).
+2. Set it in Vercel under Project → Settings → Environment Variables:
 
 ```
-WAITLIST_ENDPOINT=https://...
+WEB3FORMS_ACCESS_KEY=...
 ```
 
-Set it in Vercel under Project → Settings → Environment Variables.
+If `WEB3FORMS_ACCESS_KEY` is unset, the form is replaced with a `mailto:sales@plantbionix.com` button — so the page never shows visitors a broken form.
 
 ## Product images
 
