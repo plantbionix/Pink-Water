@@ -15,9 +15,11 @@ export default function Home() {
               Plain water is a missed opportunity.
             </h1>
             <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft">
-              Kerala households worked out a fix for that generations ago.
-              Drop a piece of heartwood in the pot, and the same water comes
-              out with colour, character, and a reason to finish the jug.
+              Kerala grandmothers already worked out a fix for that: heartwood
+              chips, sold unbranded, dropped into a pot of water. It stains,
+              gives the water colour and character, and a reason to finish
+              the jug. What nobody did was standardise it enough to put on a
+              shelf.
             </p>
           </div>
           <div className="relative aspect-[4/3] overflow-hidden rounded-[2rem] bg-bone-deep">
@@ -46,44 +48,21 @@ export default function Home() {
             <div className="md:order-1">
               <p className="eyebrow text-rose">Why we made this</p>
               <p className="mt-5 leading-relaxed text-ink-soft">
-                Pick up almost anything colourful in a store and check the
-                label. The pink, the red, the electric blue. It&rsquo;s dye,
-                most of the time. Ours isn&rsquo;t on the label at all,
-                because there isn&rsquo;t one to declare.
+                This is what our grandmothers made at home, generation after
+                generation: a piece of heartwood dropped into a pot of water,
+                nothing else added, nothing to declare because there was
+                never a label to declare it on. It was always organic,
+                always homemade, just never something you could buy off a
+                shelf. So we started buying the same heartwood, milling it to
+                a coarse cut, and sealing it one dose at a time, keeping
+                everything about it exactly as it was, minus the guesswork.
               </p>
               <h2 className="display mt-4 text-3xl md:text-4xl">
-                The plant does the work. We just portion it.
+                No dye. No guesswork. No stained pots.
               </h2>
-              <p className="mt-6 leading-relaxed text-ink-soft">
-                Heartwood, milled to a coarse cut and sealed one dose at a
-                time. No powder to scoop, no schedule to keep, no guessing
-                how much went into the pot.
-              </p>
+
+              <ContinueLink href="/products" label="The Products" />
             </div>
-          </div>
-        </section>
-
-        <section className="border-t border-line">
-          <div className="mx-auto max-w-3xl px-6 py-16 md:py-24">
-            <h2 className="display text-3xl md:text-4xl">
-              Everybody&rsquo;s grandmother used it. Nobody made it worth
-              putting on the table.
-            </h2>
-            <p className="mt-6 leading-relaxed text-ink-soft">
-              Across Kerala it&rsquo;s sold as unbranded bags of chips. You
-              boil them, they stain the pot, and you never quite know how
-              much to use. We buy the heartwood, mill it fine, and portion it
-              so a litre comes out the same every time. That&rsquo;s the
-              whole product. The tradition was already there.
-            </p>
-            <p className="mt-6 text-sm leading-relaxed text-ink-soft">
-              We&rsquo;re deliberately not making a health claim here. The
-              modern research on these woods is early. When there&rsquo;s
-              something solid to say, we&rsquo;ll say it and show you the
-              paper.
-            </p>
-
-            <ContinueLink href="/products" label="The Products" />
           </div>
         </section>
       </main>

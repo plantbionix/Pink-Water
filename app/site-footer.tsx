@@ -1,6 +1,19 @@
 export default function SiteFooter() {
   return (
     <footer className="border-t border-line">
+      <div className="border-b border-line bg-rose-tint">
+        <div className="mx-auto flex max-w-6xl flex-col items-center gap-5 px-6 py-14 text-center">
+          <p className="display text-2xl md:text-3xl">
+            Want to be first in line?
+          </p>
+          <a
+            href="/join"
+            className="eyebrow inline-block rounded-full bg-rose px-7 py-3.5 text-white transition-colors hover:bg-rose-deep"
+          >
+            Join the waitlist
+          </a>
+        </div>
+      </div>
       <div className="mx-auto max-w-6xl px-6 py-10">
         <div className="flex flex-col justify-between gap-6 sm:flex-row">
           <div>

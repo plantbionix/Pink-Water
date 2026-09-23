@@ -30,7 +30,7 @@ export default function SiteHeader() {
             href="/join"
             className="eyebrow rounded-full bg-rose px-5 py-2.5 text-white transition-colors hover:bg-rose-deep"
           >
-            Join
+            Join the waitlist
           </Link>
         </nav>
       </div>
