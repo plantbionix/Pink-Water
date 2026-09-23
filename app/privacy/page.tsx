@@ -11,7 +11,7 @@ export default function PrivacyPolicy() {
     <>
       <header className="border-b border-line">
         <div className="mx-auto flex max-w-3xl items-center justify-between px-6 py-4">
-          <Link href="/" className="display text-xl text-ink">
+          <Link href="/" className="display text-xl text-paper">
             plant bionix
           </Link>
         </div>
@@ -20,11 +20,11 @@ export default function PrivacyPolicy() {
       <main className="mx-auto max-w-3xl px-6 py-16 md:py-20">
         <p className="eyebrow text-rose">Legal</p>
         <h1 className="display mt-4 text-4xl md:text-5xl">Privacy Policy</h1>
-        <p className="mt-4 text-sm text-ink-soft">Last updated September 2026</p>
+        <p className="mt-4 text-sm text-paper-soft">Last updated September 2026</p>
 
-        <div className="mt-10 space-y-8 leading-relaxed text-ink-soft">
+        <div className="mt-10 space-y-8 leading-relaxed text-paper-soft">
           <section>
-            <h2 className="display text-2xl text-ink">What we collect</h2>
+            <h2 className="display text-2xl text-paper">What we collect</h2>
             <p className="mt-3">
               When you join our waitlist, we ask for your name, email address,
               mobile number, and delivery address (including landmark, city
@@ -35,7 +35,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="display text-2xl text-ink">How we use it</h2>
+            <h2 className="display text-2xl text-paper">How we use it</h2>
             <p className="mt-3">
               Your details are used only to: notify you when Daha Pink and
               Daha Amber are ready to ship, plan which regions to prioritise
@@ -45,7 +45,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="display text-2xl text-ink">Where it&rsquo;s stored</h2>
+            <h2 className="display text-2xl text-paper">Where it&rsquo;s stored</h2>
             <p className="mt-3">
               Waitlist submissions are sent directly to our team&rsquo;s email
               (sales@plantbionix.com) via a third-party form service
@@ -55,13 +55,13 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="display text-2xl text-ink">Your rights</h2>
+            <h2 className="display text-2xl text-paper">Your rights</h2>
             <p className="mt-3">
               You can ask us to delete your information at any time by
               emailing{" "}
               <a
                 href="mailto:sales@plantbionix.com"
-                className="text-rose-deep underline"
+                className="text-rose underline"
               >
                 sales@plantbionix.com
               </a>{" "}
@@ -71,7 +71,7 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="display text-2xl text-ink">Cookies</h2>
+            <h2 className="display text-2xl text-paper">Cookies</h2>
             <p className="mt-3">
               This site does not use tracking or advertising cookies. Any
               cookies set are strictly functional (e.g. remembering your
@@ -80,12 +80,12 @@ export default function PrivacyPolicy() {
           </section>
 
           <section>
-            <h2 className="display text-2xl text-ink">Contact</h2>
+            <h2 className="display text-2xl text-paper">Contact</h2>
             <p className="mt-3">
               Questions about this policy? Write to{" "}
               <a
                 href="mailto:sales@plantbionix.com"
-                className="text-rose-deep underline"
+                className="text-rose underline"
               >
                 sales@plantbionix.com
               </a>
@@ -96,7 +96,7 @@ export default function PrivacyPolicy() {
 
         <Link
           href="/"
-          className="mt-16 inline-block text-sm text-ink-soft underline hover:text-rose-deep"
+          className="mt-16 inline-block text-sm text-paper-soft underline hover:text-rose"
         >
           ← Back to plantbionix.com
         </Link>
@@ -104,7 +104,7 @@ export default function PrivacyPolicy() {
 
       <footer className="border-t border-line">
         <div className="mx-auto max-w-3xl px-6 py-8">
-          <p className="text-xs text-ink-soft">
+          <p className="text-xs text-paper-soft">
             © {new Date().getFullYear()} Plant Bionix LLP
           </p>
         </div>
