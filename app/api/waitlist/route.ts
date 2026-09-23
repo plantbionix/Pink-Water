@@ -1,7 +1,8 @@
 const endpoint = process.env.WAITLIST_ENDPOINT;
+const validSegments = new Set(["diaspora", "wellness", "horeca", "other"]);
 
 export async function POST(request: Request) {
-  const { email } = await request.json();
+  const { email, segment } = await request.json();
 
   if (typeof email !== "string" || !/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) {
     return Response.json({ error: "Invalid email" }, { status: 400 });
@@ -14,7 +15,11 @@ export async function POST(request: Request) {
   const upstream = await fetch(endpoint, {
     method: "POST",
     headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({ email, source: "plantbionix.com" }),
+    body: JSON.stringify({
+      email,
+      segment: validSegments.has(segment) ? segment : undefined,
+      source: "plantbionix.com",
+    }),
   });
 
   if (!upstream.ok) {

@@ -2,11 +2,16 @@
 
 :root {
   --bone: #faf6f1;
-  --bone-deep: #f2e9e0;
+  --bone-deep: #f3e7dc;
   --ink: #241b18;
   --ink-soft: #6d5c54;
-  --rose: #b4544c;
-  --rose-deep: #8d3d38;
+  --rose: #d94f7a;
+  --rose-deep: #a8305a;
+  --rose-tint: #fbe2ea;
+  --amber: #b56a2e;
+  --amber-tint: #f3e2cd;
+  --gold: #8a6a1f;
+  --gold-tint: #ece2c4;
   --line: #e4d8cc;
 }
 
@@ -17,25 +22,52 @@
   --color-ink-soft: var(--ink-soft);
   --color-rose: var(--rose);
   --color-rose-deep: var(--rose-deep);
+  --color-rose-tint: var(--rose-tint);
+  --color-amber: var(--amber);
+  --color-amber-tint: var(--amber-tint);
+  --color-gold: var(--gold);
+  --color-gold-tint: var(--gold-tint);
   --color-line: var(--line);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-instrument);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-baloo);
 }
 
 body {
   background: var(--bone);
   color: var(--ink);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
 .display {
-  font-family: var(--font-instrument), ui-serif, Georgia, serif;
-  font-weight: 400;
-  letter-spacing: -0.02em;
+  font-family: var(--font-baloo), ui-rounded, sans-serif;
+  font-weight: 800;
+  letter-spacing: -0.01em;
 }
 
 .eyebrow {
-  font-size: 0.6875rem;
-  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .marquee-track {
+    animation: none;
+  }
 }
