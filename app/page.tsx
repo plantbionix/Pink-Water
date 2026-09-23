@@ -91,13 +91,65 @@ const faqs = [
     q: "Is this a supplement or a medicine?",
     a: "Neither. It's a food product — heartwood you steep in water, the way Kerala households already do. We're not making any health claim about it.",
   },
+  {
+    q: "What is this called in Kerala?",
+    a: "Pathimugham vellam. You'll also see it spelled pathimugam, pathimukham or patangam depending on who taught you — same wood, same water. The wood itself is pathimugham, Caesalpinia sappan, and the water it makes is what we call Daha Pink.",
+  },
+  {
+    q: "How is this different from green tea?",
+    a: "It isn't a substitute for green tea and we're not claiming it's better — it's just a different habit. No caffeine, no leaves to steep, and it's a pot you drink through the day rather than a single cup you have to remember to finish.",
+  },
+  {
+    q: "Does it have caffeine? Can I drink it in the evening?",
+    a: "No caffeine at all — it's heartwood in water, not a tea. That's a fact about what's in it, not a claim about sleep or relaxation, but it's why people drink it any time of day, evenings included.",
+  },
+  {
+    q: "How does this compare to hibiscus tea?",
+    a: "Hibiscus is the closest reference point most people already know: both are caffeine-free and coloured only by the plant itself. The differences — hibiscus is a flower and sharply tart; this is heartwood, gentler and faintly sweet, closer to water than to tea. And hibiscus is usually a cup; this is a whole pot, the way Kerala households drink it all day.",
+  },
 ];
+
+const faqJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  mainEntity: faqs.map((item) => ({
+    "@type": "Question",
+    name: item.q,
+    acceptedAnswer: {
+      "@type": "Answer",
+      text: item.a,
+    },
+  })),
+};
+
+const productJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  itemListElement: range.map((product, i) => ({
+    "@type": "ListItem",
+    position: i + 1,
+    item: {
+      "@type": "Product",
+      name: `Plant Bionix ${product.name}`,
+      description: product.body,
+      brand: { "@type": "Brand", name: "Plant Bionix" },
+    },
+  })),
+};
 
 export default function Home() {
   const waitlistEnabled = Boolean(process.env.NEXT_PUBLIC_WEB3FORMS_ACCESS_KEY);
 
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(productJsonLd) }}
+      />
       <header className="sticky top-0 z-10 border-b border-line bg-bone/90 backdrop-blur">
         <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
           <span className="display text-xl text-ink">plant bionix</span>

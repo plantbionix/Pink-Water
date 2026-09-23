@@ -19,6 +19,9 @@ export const metadata: Metadata = {
   title: "Plant Bionix — functional water",
   description:
     "Three Kerala heartwoods, portioned into single-serve sachets. One per litre, nothing else added. Daha Pink, Daha Amber and Daha Gold. Join the waitlist.",
+  alternates: {
+    canonical: "https://www.plantbionix.com",
+  },
   openGraph: {
     title: "Plant Bionix — functional water",
     description:
@@ -31,13 +34,32 @@ export const metadata: Metadata = {
   },
 };
 
+const organizationJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Plant Bionix",
+  url: "https://www.plantbionix.com",
+  logo: "https://www.plantbionix.com/favicon.ico",
+  email: "sales@plantbionix.com",
+  address: {
+    "@type": "PostalAddress",
+    addressCountry: "IN",
+  },
+};
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
       className={`${poppins.variable} ${baloo.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationJsonLd) }}
+        />
+        {children}
+      </body>
     </html>
   );
 }
