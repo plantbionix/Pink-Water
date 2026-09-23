@@ -10,6 +10,24 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
+      url: "https://www.plantbionix.com/products",
+      lastModified,
+      changeFrequency: "weekly",
+      priority: 0.9,
+    },
+    {
+      url: "https://www.plantbionix.com/faq",
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.7,
+    },
+    {
+      url: "https://www.plantbionix.com/join",
+      lastModified,
+      changeFrequency: "monthly",
+      priority: 0.8,
+    },
+    {
       url: "https://www.plantbionix.com/privacy",
       lastModified,
       changeFrequency: "yearly",
