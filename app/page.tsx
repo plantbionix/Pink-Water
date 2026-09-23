@@ -487,8 +487,14 @@ export default function Home() {
             how these woods have historically been used in Kerala households —
             not an outcome you should expect.
           </p>
-          <p className="mt-4 text-xs text-ink-soft">
-            © {new Date().getFullYear()} Plant Bionix LLP
+          <p className="mt-4 flex flex-wrap gap-x-4 gap-y-1 text-xs text-ink-soft">
+            <span>© {new Date().getFullYear()} Plant Bionix LLP</span>
+            <a href="/privacy" className="underline hover:text-rose-deep">
+              Privacy Policy
+            </a>
+            <a href="/terms" className="underline hover:text-rose-deep">
+              Terms of Use
+            </a>
           </p>
         </div>
       </footer>
