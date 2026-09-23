@@ -64,9 +64,9 @@ const dayInTheLife = [
 ];
 
 const howTo = [
-  { step: "01", h: "Water in.", p: "Any jug, bottle or pot. Tap water is fine." },
-  { step: "02", h: "Sachet in.", p: "One per litre. Paper dip-bag, fully sealed." },
-  { step: "03", h: "Watch it turn.", p: "Brazilin does the work — no stirring, no dye." },
+  { step: "01", h: "Water in.", p: "Any jug, bottle or pot. Tap water is fine — no boiling." },
+  { step: "02", h: "Sachet in.", p: "Drop it in and walk away. Nothing to stir, nothing to watch yet." },
+  { step: "03", h: "Then it happens.", p: "About four minutes, and the water turns rose on its own — brazilin, the pigment already in the wood." },
   { step: "04", h: "Drink it through the day.", p: "Refill the same sachet's litre, or start fresh." },
 ];
 
@@ -226,6 +226,12 @@ export default function Home() {
 
         <section className="mx-auto max-w-4xl px-6 py-16 text-center md:py-24">
           <p className="eyebrow text-rose">Why we made this</p>
+          <p className="mx-auto mt-5 max-w-xl leading-relaxed text-ink-soft">
+            Pick up almost anything colourful in a store and check the label.
+            The pink, the red, the electric blue — it&rsquo;s dye, most of the
+            time. Ours isn&rsquo;t on the label at all, because there isn&rsquo;t
+            one to declare.
+          </p>
           <h2 className="display mt-4 text-3xl md:text-5xl">
             The plant does the work.
             <br />
