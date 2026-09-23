@@ -16,11 +16,11 @@ const baloo = Baloo_2({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.plantbionix.com"),
-  title: "Plant Bionix — functional water from Kerala",
+  title: "Plant Bionix — functional water",
   description:
     "Three Kerala heartwoods, portioned into single-serve sachets. One per litre, nothing else added. Daha Pink, Daha Amber and Daha Gold. Join the waitlist.",
   openGraph: {
-    title: "Plant Bionix — functional water from Kerala",
+    title: "Plant Bionix — functional water",
     description:
       "Three Kerala heartwoods in single-serve sachets. One per litre, nothing else added.",
     url: "https://www.plantbionix.com",

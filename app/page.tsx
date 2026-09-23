@@ -126,7 +126,7 @@ export default function Home() {
 
       <main className="flex-1">
         <section className="px-6 pt-16 pb-10 text-center md:pt-24">
-          <p className="eyebrow text-rose">Functional water from Kerala</p>
+          <p className="eyebrow text-rose">Functional water</p>
           <h1 className="display mx-auto mt-5 max-w-3xl text-5xl leading-[1.05] md:text-7xl">
             Plain water is a
             <br />
@@ -419,7 +419,7 @@ export default function Home() {
           <div className="flex flex-col justify-between gap-6 sm:flex-row">
             <div>
               <span className="display text-lg">plant bionix</span>
-              <p className="mt-2 text-sm text-ink-soft">Kerala, India</p>
+              <p className="mt-2 text-sm text-ink-soft">India</p>
             </div>
             <a
               href="mailto:sales@plantbionix.com"
