@@ -1,12 +1,8 @@
 # Plant Bionix
 
-Pre-launch teaser site for Plant Bionix. Next.js App Router, Tailwind v4.
+Marketing site for Plant Bionix — functional water. Next.js App Router, Tailwind v4.
 
 This is the **new** site. The existing coming-soon site lives in `plantbionix-coming-soon` and stays untouched so the domain can be pointed back to it at any time.
-
-## Positioning: teaser, not product site
-
-As of this design pass, the site deliberately does **not** name ingredients, show the product range, or explain how it works — it names the problem (plain water is boring, colour usually means synthetic dye) and withholds the reveal. This was a direct decision to build suspense and avoid disclosing product/business specifics before launch. If the brand moves to a full reveal later, the previous product-detail copy (range grid, "how it works," ingredient FAQ) is in git history on this branch — don't rebuild it from scratch, recover it from a prior commit and adapt.
 
 ## Local development
 

@@ -1,24 +1,24 @@
 import type { Metadata } from "next";
-import { Inter, Fraunces } from "next/font/google";
+import { Poppins, Baloo_2 } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-inter",
+const poppins = Poppins({
+  variable: "--font-poppins",
+  weight: ["400", "500", "600"],
   subsets: ["latin"],
 });
 
-const fraunces = Fraunces({
-  variable: "--font-fraunces",
-  weight: ["400", "500"],
-  style: ["normal", "italic"],
+const baloo = Baloo_2({
+  variable: "--font-baloo",
+  weight: ["600", "700", "800"],
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.plantbionix.com"),
-  title: "Plant Bionix — something is coming",
+  title: "Plant Bionix — functional water",
   description:
-    "Plain water is a missed opportunity. Something is coming to fix that. Join the waitlist to be the first to know.",
+    "Three Kerala heartwoods, portioned into single-serve sachets. One per litre, nothing else added. Daha Pink, Daha Amber and Daha Gold. Join the waitlist.",
   alternates: {
     canonical: "https://www.plantbionix.com",
   },
@@ -26,8 +26,9 @@ export const metadata: Metadata = {
     google: "M5_4zQdiSBw8xVa9JCPC_CKDsV9yhrUaQMj9DtQrkt8",
   },
   openGraph: {
-    title: "Plant Bionix — something is coming",
-    description: "Plain water is a missed opportunity. Join the waitlist.",
+    title: "Plant Bionix — functional water",
+    description:
+      "Three Kerala heartwoods in single-serve sachets. One per litre, nothing else added.",
     url: "https://www.plantbionix.com",
     siteName: "Plant Bionix",
     images: ["/products/product-0189.jpg"],
@@ -53,7 +54,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
+      className={`${poppins.variable} ${baloo.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <script

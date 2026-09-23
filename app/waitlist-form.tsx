@@ -26,7 +26,7 @@ export function WaitlistForm({
     return (
       <a
         href={enabled ? "#waitlist" : FALLBACK_MAILTO}
-        className="inline-block rounded-full bg-rose px-8 py-4 font-medium text-void transition-colors hover:bg-rose-deep hover:text-paper"
+        className="inline-block rounded-full bg-rose px-7 py-3.5 font-semibold text-white transition-colors hover:bg-rose-deep"
       >
         Join the waitlist
       </a>
@@ -37,7 +37,7 @@ export function WaitlistForm({
     return (
       <a
         href={FALLBACK_MAILTO}
-        className="inline-block rounded-full bg-rose px-8 py-4 font-medium text-void transition-colors hover:bg-rose-deep hover:text-paper"
+        className="inline-block rounded-full bg-rose px-7 py-3.5 font-semibold text-white transition-colors hover:bg-rose-deep"
       >
         Email us to join the waitlist
       </a>
@@ -86,20 +86,20 @@ export function WaitlistForm({
 
   if (status === "done") {
     return (
-      <div className="rounded-2xl border border-line bg-white/5 px-8 py-10 text-center backdrop-blur">
-        <p className="display glow text-3xl text-rose">You&rsquo;re on the list.</p>
-        <p className="mt-3 max-w-sm mx-auto leading-relaxed text-paper-soft">
-          We&rsquo;ll reach out personally when it&rsquo;s time. No spam, no
-          forwarding your number — just one note, when there&rsquo;s something
-          to say.
+      <div className="rounded-2xl bg-white px-8 py-10 text-center shadow-sm">
+        <p className="display text-3xl text-rose-deep">You&rsquo;re on the list.</p>
+        <p className="mt-3 max-w-sm mx-auto leading-relaxed text-ink-soft">
+          Someone from Plant Bionix will reach out to you personally before the
+          first pouches ship. No spam, no forwarding your number — just one
+          note when it&rsquo;s ready.
         </p>
       </div>
     );
   }
 
   const inputClass =
-    "w-full rounded-xl border border-line bg-white/5 px-5 py-3.5 text-paper placeholder:text-paper-soft/40 outline-none transition-colors focus:border-rose focus:bg-white/[0.08]";
-  const labelClass = "eyebrow block text-paper-soft mb-1.5";
+    "w-full rounded-2xl border-2 border-line bg-white px-5 py-3.5 text-ink placeholder:text-ink-soft/60 outline-none focus:border-rose";
+  const labelClass = "eyebrow block text-ink-soft mb-1.5";
 
   return (
     <form onSubmit={onSubmit} className="w-full max-w-xl text-left">
@@ -209,21 +209,13 @@ export function WaitlistForm({
             defaultValue=""
             className={inputClass}
           >
-            <option value="" disabled className="bg-void">
+            <option value="" disabled>
               Choose one
             </option>
-            <option value="diaspora" className="bg-void">
-              I miss this from home
-            </option>
-            <option value="wellness" className="bg-void">
-              Curious, never tried it
-            </option>
-            <option value="horeca" className="bg-void">
-              I run a café, resort or restaurant
-            </option>
-            <option value="other" className="bg-void">
-              Something else
-            </option>
+            <option value="diaspora">I miss this from home</option>
+            <option value="wellness">Curious, never tried it</option>
+            <option value="horeca">I run a café, resort or restaurant</option>
+            <option value="other">Something else</option>
           </select>
         </div>
       </div>
@@ -231,18 +223,18 @@ export function WaitlistForm({
       <button
         type="submit"
         disabled={status === "sending"}
-        className="mt-6 w-full rounded-full bg-rose px-8 py-4 font-medium text-void transition-colors hover:bg-rose-deep hover:text-paper disabled:opacity-60 sm:w-auto"
+        className="mt-6 w-full rounded-full bg-rose px-7 py-3.5 font-semibold text-white transition-colors hover:bg-rose-deep disabled:opacity-60 sm:w-auto"
       >
         {status === "sending" ? "Sending…" : "Join the waitlist"}
       </button>
 
-      <p className="mt-3 text-xs text-paper-soft">
+      <p className="mt-3 text-xs text-ink-soft">
         Your address is only used to plan delivery for the first run — never
         shared or sold.
       </p>
 
       {status === "error" && (
-        <p className="mt-3 text-sm text-rose">
+        <p className="mt-3 text-sm text-rose-deep">
           That didn&rsquo;t go through. Try again, or write to{" "}
           <a className="underline" href={FALLBACK_MAILTO}>
             sales@plantbionix.com

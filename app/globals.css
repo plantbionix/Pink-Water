@@ -1,68 +1,73 @@
 @import "tailwindcss";
 
 :root {
-  --void: #120e0d;
-  --void-deep: #0a0807;
-  --paper: #f6efe6;
-  --paper-soft: #b8aca2;
-  --rose: #ff6f8f;
-  --rose-deep: #ff3d68;
-  --rose-glow: rgba(255, 111, 143, 0.35);
-  --line: rgba(246, 239, 230, 0.14);
+  --bone: #faf6f1;
+  --bone-deep: #f3e7dc;
+  --ink: #241b18;
+  --ink-soft: #6d5c54;
+  --rose: #d94f7a;
+  --rose-deep: #a8305a;
+  --rose-tint: #fbe2ea;
+  --amber: #b56a2e;
+  --amber-tint: #f3e2cd;
+  --gold: #8a6a1f;
+  --gold-tint: #ece2c4;
+  --line: #e4d8cc;
 }
 
 @theme inline {
-  --color-void: var(--void);
-  --color-void-deep: var(--void-deep);
-  --color-paper: var(--paper);
-  --color-paper-soft: var(--paper-soft);
+  --color-bone: var(--bone);
+  --color-bone-deep: var(--bone-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
   --color-rose: var(--rose);
   --color-rose-deep: var(--rose-deep);
+  --color-rose-tint: var(--rose-tint);
+  --color-amber: var(--amber);
+  --color-amber-tint: var(--amber-tint);
+  --color-gold: var(--gold);
+  --color-gold-tint: var(--gold-tint);
   --color-line: var(--line);
-  --font-sans: var(--font-inter);
-  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-poppins);
+  --font-display: var(--font-baloo);
 }
 
 body {
-  background: var(--void);
-  color: var(--paper);
-  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+  background: var(--bone);
+  color: var(--ink);
+  font-family: var(--font-poppins), ui-sans-serif, system-ui, sans-serif;
 }
 
 .display {
-  font-family: var(--font-fraunces), ui-serif, Georgia, serif;
-  font-weight: 400;
+  font-family: var(--font-baloo), ui-rounded, sans-serif;
+  font-weight: 800;
   letter-spacing: -0.01em;
 }
 
 .eyebrow {
-  font-size: 0.6875rem;
+  font-size: 0.75rem;
   font-weight: 600;
-  letter-spacing: 0.22em;
+  letter-spacing: 0.14em;
   text-transform: uppercase;
 }
 
-.glow {
-  text-shadow: 0 0 40px var(--rose-glow);
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee 22s linear infinite;
 }
 
-@keyframes bloom {
-  0% {
-    opacity: 0;
-    transform: scale(0.96);
+@keyframes marquee {
+  from {
+    transform: translateX(0);
   }
-  100% {
-    opacity: 1;
-    transform: scale(1);
+  to {
+    transform: translateX(-50%);
   }
-}
-
-.animate-bloom {
-  animation: bloom 2.4s ease-out forwards;
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .animate-bloom {
+  .marquee-track {
     animation: none;
   }
 }
