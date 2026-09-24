@@ -15,6 +15,12 @@ export default function SiteHeader() {
             Home
           </Link>
           <Link
+            href="/story"
+            className="eyebrow hidden text-ink-soft transition-colors hover:text-rose sm:inline"
+          >
+            Our Story
+          </Link>
+          <Link
             href="/products"
             className="eyebrow hidden text-ink-soft transition-colors hover:text-rose sm:inline"
           >
